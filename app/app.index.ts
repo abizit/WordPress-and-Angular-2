@@ -1,7 +1,8 @@
 import {Component, View} from 'angular2/core';
 import {RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES} from "angular2/router";
 
-import {PostComponent} from './post.component'
+import {PostComponent} from './post.component';
+import {PostDetail} from './post-detail.component';
 
 @Component({
     selector : 'post-app',
@@ -17,8 +18,14 @@ import {PostComponent} from './post.component'
     {
         path: '/posts',
         name : 'Posts',
-        component : PostComponent
+        component : PostComponent,
+        useAsDefault : true
 
+    },
+    {
+        path:'/posts/:id',
+        name : 'PostDetail',
+        component : PostDetail
     }
 ])
 

@@ -1,6 +1,4 @@
-System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.service'], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.service'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11,7 +9,7 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1, http_1, data_service_1;
-    var PostComponent;
+    var PostDetail;
     return {
         setters:[
             function (core_1_1) {
@@ -27,37 +25,35 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
                 data_service_1 = data_service_1_1;
             }],
         execute: function() {
-            PostComponent = (function () {
-                function PostComponent(_router, _dataService) {
-                    this._router = _router;
+            PostDetail = (function () {
+                function PostDetail(_dataService, _routerParams) {
                     this._dataService = _dataService;
+                    this._routerParams = _routerParams;
                 }
-                PostComponent.prototype.ngOnInit = function () {
-                    this.getPosts();
+                PostDetail.prototype.ngOnInit = function () {
+                    var id = +this._routerParams.get('id');
+                    this.getPost(id);
                 };
-                PostComponent.prototype.getPosts = function () {
+                PostDetail.prototype.getPost = function (id) {
                     var _this = this;
-                    this._dataService.getPosts()
-                        .subscribe(function (posts) { return _this.posts = posts; }, function (error) { return _this.errorMessage = error; });
+                    return this._dataService.getPosts()
+                        .subscribe(function (posts) { return _this.posts = posts; }, function (error) { return _this.errorMessage = error; }, function () { return _this.post = _this.posts.filter(function (post) { return post.id === id; })[0]; });
                 };
-                PostComponent.prototype.gotoDetail = function (post) {
-                    this.selectedPost = post;
-                    this._router.navigate(['PostDetail', { id: this.selectedPost.id }]);
-                };
-                PostComponent = __decorate([
+                PostDetail = __decorate([
                     core_1.Component({
-                        selector: 'post-list',
+                        selector: 'post-detail',
+                        //inputs :['post'],
                         providers: [data_service_1.DataService, http_1.HTTP_PROVIDERS]
                     }),
                     core_1.View({
-                        templateUrl: '../templates/template-post-list.html'
+                        templateUrl: '../templates/template-post-detail.html'
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, data_service_1.DataService])
-                ], PostComponent);
-                return PostComponent;
-            }());
-            exports_1("PostComponent", PostComponent);
+                    __metadata('design:paramtypes', [data_service_1.DataService, router_1.RouteParams])
+                ], PostDetail);
+                return PostDetail;
+            })();
+            exports_1("PostDetail", PostDetail);
         }
     }
 });
-//# sourceMappingURL=post.component.js.map
+//# sourceMappingURL=post-detail.component.js.map

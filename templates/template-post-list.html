@@ -1,7 +1,7 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <article *ngFor="#post of posts">
+            <article *ngFor="#post of posts" (click)="gotoDetail(post)">
                 <h3>{{ post.title.rendered }}</h3>
             </article>
         </div>

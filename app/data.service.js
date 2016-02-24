@@ -1,4 +1,6 @@
-System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_1) {
+System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,9 +33,19 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
                     //return this.http.get(this._dataURL).map((res:Response) => res.json());
                     return this.http.get(this._dataURL)
                         .map(function (res) { return res.json(); })
-                        .do(function (data) { return console.log(data); }) // eyeball results in the console
                         .catch(this.handleError);
                 };
+                //todo fix search
+                //getPost(id:number){
+                //    this.http.get(this._dataURL)
+                //        .map(res=>res.json())
+                //        //.do(data => console.log(data)) // eyeball results in the console
+                //        .catch(this.handleError)
+                //        .subscribe(
+                //            posts => this.posts = posts,
+                //            error =>  this.errorMessage = <any>error,
+                //            () => this.post = this.posts.filter(post => post.id === 183)[0]);
+                //}
                 DataService.prototype.handleError = function (error) {
                     // in a real world app, we may send the error to some remote logging infrastructure
                     // instead of just logging it to the console
@@ -45,7 +57,7 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
                     __metadata('design:paramtypes', [http_1.Http])
                 ], DataService);
                 return DataService;
-            })();
+            }());
             exports_1("DataService", DataService);
         }
     }

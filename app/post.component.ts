@@ -21,6 +21,7 @@ interface Hero {
 export class PostComponent implements OnInit{
     errorMessage : string;
     posts : PostInterface[];
+    selectedPost : PostInterface;
 
 
     constructor(
@@ -37,6 +38,10 @@ export class PostComponent implements OnInit{
             .subscribe(
                 posts => this.posts = posts,
                 error =>  this.errorMessage = <any>error);
+    }
+    gotoDetail(post:PostInterface) {
+        this.selectedPost = post;
+        this._router.navigate(['PostDetail', {id: this.selectedPost.id}]);
     }
 }
 
