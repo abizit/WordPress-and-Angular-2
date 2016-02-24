@@ -11,10 +11,9 @@
 <p>
 <code>npm start</code>
 </p>
-<p>
-change the <code>private _dataURL : string = 'url.com/?rest_route=/wp/v2/posts';</code> according to the url of ur wordperss setup in the data.service.ts file
-</p>
 
+<h3>Server and Other dependancies</h3>
+<p>Node.js Server and TypeScript compiler setup done according to offical Angular 2 Site <a href="https://angular.io/">https://angular.io/</a></p>
 
 
 
