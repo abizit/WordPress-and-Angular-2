@@ -416,3 +416,5 @@ header h2.tzine a{
 	font-size: 40px;
 }
 
+h3{cursor: pointer;}
+h3:hover{color: #0b97c4}

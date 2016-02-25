@@ -28,24 +28,33 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
                 function DataService(http) {
                     this.http = http;
                     this._dataURL = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
+                    this.singlePost = [];
                 }
-                DataService.prototype.getPosts = function () {
+                DataService.prototype.getData = function (url) {
                     //return this.http.get(this._dataURL).map((res:Response) => res.json());
-                    return this.http.get(this._dataURL)
-                        .map(function (res) { return res.json(); })
+                    return this.http.get(url)
+                        .map(function (res) {
+                        if (res.json()) {
+                            return res.json();
+                        }
+                    })
                         .catch(this.handleError);
                 };
-                //todo fix search
-                //getPost(id:number){
-                //    this.http.get(this._dataURL)
-                //        .map(res=>res.json())
-                //        //.do(data => console.log(data)) // eyeball results in the console
-                //        .catch(this.handleError)
-                //        .subscribe(
-                //            posts => this.posts = posts,
-                //            error =>  this.errorMessage = <any>error,
-                //            () => this.post = this.posts.filter(post => post.id === 183)[0]);
-                //}
+                DataService.prototype.methodName = function () {
+                    var _this = this;
+                    this.getPosts()
+                        .subscribe(function (res) {
+                        _this.posts = res;
+                        return _this.posts;
+                    });
+                };
+                DataService.prototype.getPosts = function () {
+                    return this.getData(this._dataURL);
+                };
+                DataService.prototype.getPost = function (filterid) {
+                    this._dataURL = this._dataURL + '/' + filterid;
+                    return this.getData(this._dataURL);
+                };
                 DataService.prototype.handleError = function (error) {
                     // in a real world app, we may send the error to some remote logging infrastructure
                     // instead of just logging it to the console

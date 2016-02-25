@@ -1,0 +1,711 @@
+[{
+  "id": 187,
+  "date": "2015-07-22T09:29:01",
+  "date_gmt": "2015-07-22T09:29:01",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=187"
+  },
+  "modified": "2015-07-22T09:29:09",
+  "modified_gmt": "2015-07-22T09:29:09",
+  "slug": "web-development-2",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=187",
+  "title": {
+    "rendered": "Web Development"
+  },
+  "content": {
+    "rendered": "<p>A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content <\/p>\n<p><code><br \/>\nimport sys<br \/>\nimport base64<\/p>\n<p>input_list = []<\/p>\n<p>def add_to_list(new_line):<br \/>\n  input_list.append(new_line)<\/p>\n<p>def user_input():<br \/>\n  print 'Input the text you would like to decode here n'<br \/>\n  while True:<br \/>\n    new_line = raw_input('> ')<br \/>\n    if new_line == 'DONE':<br \/>\n      break<br \/>\n    else:<br \/>\n      add_to_list(new_line)<br \/>\n      continue<\/p>\n<p>def show_list():<br \/>\n  print \"Here is the b64 code block n\"<br \/>\n  for item in input_list:<br \/>\n    print(item)<\/p>\n<p>def combine_list(): #combines the list into a string<br \/>\n  print \"here is the decoded text n\"<br \/>\n  a = ''.join(input_list)<br \/>\n  print base64.b64decode(a)<\/p>\n<p>user_input()<br \/>\nshow_list()<br \/>\nprint \"n\"<br \/>\ncombine_list()<br \/>\n<\/code><\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 164,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/187"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=187"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/187\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/164"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=187"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=187"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=187"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/187\/meta"
+    }]
+  }
+}, {
+  "id": 184,
+  "date": "2015-07-22T08:40:16",
+  "date_gmt": "2015-07-22T08:40:16",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=184"
+  },
+  "modified": "2015-07-22T08:40:25",
+  "modified_gmt": "2015-07-22T08:40:25",
+  "slug": "blog-from-dale-2",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=184",
+  "title": {
+    "rendered": "Blog from Dale"
+  },
+  "content": {
+    "rendered": "<p>Responisive broken elements:<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>Responisive broken elements:<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 172,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/184"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=184"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/184\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/172"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=184"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=184"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=184"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/184\/meta"
+    }]
+  }
+}, {
+  "id": 183,
+  "date": "2015-07-22T08:40:08",
+  "date_gmt": "2015-07-22T08:40:08",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=183"
+  },
+  "modified": "2015-07-22T08:40:32",
+  "modified_gmt": "2015-07-22T08:40:32",
+  "slug": "a-simple-workflow-from-development-to-deployment-2",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=183",
+  "title": {
+    "rendered": "A Simple Workflow From Development To Deployment"
+  },
+  "content": {
+    "rendered": "<p>In this article I\u2019ll be taking a look at how to build a <strong>simple yet robust workflow for developing sites<\/strong> that require PHP and MySQL. I\u2019ll show you how to use <a href=\"https:\/\/www.vagrantup.com\/\">Vagrant<\/a> to create and run a web server on your own computer, with the version of PHP your live site runs. I also demonstrate a process for using a hosted service to deploy files in a robust way to your live server.<\/p>\n<p>This article is for you if you currently have no way to test your PHP and MySQL sites locally, or use something like <a href=\"https:\/\/www.mamp.info\/\">MAMP<\/a> or <a href=\"https:\/\/www.apachefriends.org\/\">XAMPP<\/a>. The second half of the article will help you move away from uploading files using FTP to a process that is far less likely to cause you problems.<\/p>\n<h3 id=\"the-aim-of-a-local-development-environment\">The Aim Of A Local Development Environment<\/h3>\n<p>When designing and developing your website, you should try to match the live web server as much as possible. This should include ensuring that paths from root don\u2019t change between local and live versions, and that PHP modules and permissions are the same in both places. This approach will reduce the possibility of something going wrong as you push the site live. It should also enable you to come back to a site to make changes and updates and know that you can then deploy those changes without breaking the running site.<\/p>\n<p><strong>A good local development environment saves you time and stress.<\/strong> It gives you a place to test things out. It means that you can pick up a project, make some changes, deploy them and bill your client for another job well done.<\/p>\n<h3 id=\"disaster-free-deployments\">Disaster-Free Deployments<\/h3>\n<p>If you keep a list of changes made to your site and then transfer the files one by one, you leave yourself open to difficulties caused by human error and connectivity problems. Many issues we see supporting our products are down to failed FTP transfers. A key file has failed to upload, and it is deep in the core product. <strong>It\u2019s easy to forget to transfer a file<\/strong>, and it\u2019s also easy to leave old files lying around. If the software you use has removed some files to resolve a security issue, leaving them on the server could leave you at risk even if you have upgraded.<\/p>\n<p>A good deployment method ensures that the files on your live server exactly match those locally. If anything fails to deploy, you should be notified so you can fix the issue before your client or their customers see it first!<\/p>\n<h3 id=\"step-1-grab-some-tools\">Step 1: Grab Some Tools<\/h3>\n<p>We\u2019re going to be using some free tools to create our development environment. First, download <a href=\"https:\/\/www.virtualbox.org\/\">VirtualBox<\/a>, a free application which allows you to run a virtual machine on your computer. You may have already come across virtual machines if you work on a Mac and use a Windows virtual machine for testing. A virtual machine is exactly as the name suggests, a complete virtual OS running on your computer.<\/p>\n<p>Install the version of VirtualBox for your operating system.<\/p>\n<p>Now download and install <a href=\"https:\/\/www.vagrantup.com\/\">Vagrant<\/a>. Vagrant is an application that helps you manage virtual machines.<\/p>\n<p>It\u2019s possible to work with virtual machines without using Vagrant. However, each time you want to set up a new VM you have to go through the process of installing web server software and configuring the server. Vagrant helps you automate that process so that within a few minutes you can have a local web server running your site.<\/p>\n<p>If you are on Mac OS X or Linux, at the command line run the following command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">sudo vagrant plugin install vagrant<span class=\"token operator\">-<\/span>bindfs\r\n<\/code><\/pre>\n<p>For all operating systems, run the next command to install <a href=\"https:\/\/github.com\/smdahlen\/vagrant-hostmanager\">Vagrant Host Manager<\/a> to save you editing your hosts file by hand.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">sudo vagrant plugin install vagrant<span class=\"token operator\">-<\/span>hostmanager\r\n<\/code><\/pre>\n<p>Vagrant requires a project folder with a text file saved with the name <i>Vagrantfile<\/i> in the root. In the Vagrantfile you specify how the VM should be set up. You can write your own configuration scripts for Vagrant, but for most cases you don\u2019t need to as someone else has already done the hard work for you. Here we\u2019re going to use a tool called <a href=\"https:\/\/puphpet.com\/\">PuPHPet<\/a>.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt-small.png\" alt=\"Screenshot of PuPHPet website.\" \/><\/a><\/p>\n<figcaption>The PuPHPet website. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<h4 id=\"puphpet\">PUPHPET<\/h4>\n<p>PuPHPet is an online configuration tool that helps you configure a Vagrant project. You work through a form on the website, selecting options for your site, and then download a package containing a Vagrantfile and other scripts to set up a virtual machine.<\/p>\n<h3 id=\"step-2-discover-what-is-on-your-live-server\">Step 2: Discover What Is On Your Live Server<\/h3>\n<p>To use PuPHPet to set up a development server that is as close as possible to the hosting you will use for the site, first find out what is on the live server. You want to know:<\/p>\n<ol>\n<li>Type of Linux<\/li>\n<li>Web server: Apache or Nginx (probably Apache if shared hosting)<\/li>\n<li>PHP version: this will be something like PHP 5.4 or 5.5, etc.<\/li>\n<li>The configured resource limits for file upload, memory and so on<\/li>\n<li>Installed PHP modules; for example: gd, curl<\/li>\n<li>MySQL version<\/li>\n<\/ol>\n<p>If you don\u2019t yet have access to the hosting then you will need to ask the host these questions. If you do have access then you can find out for yourself.<\/p>\n<p>Upload a file to the server named <i>info.php<\/i> that contains the following PHP function:<\/p>\n<pre class=\" language-php\"><code class=\" language-php\"><span class=\"token deliminator\">&lt;?php<\/span> <span class=\"token function\">phpinfo<span class=\"token punctuation\">(<\/span><\/span><span class=\"token punctuation\">)<\/span><span class=\"token punctuation\">;<\/span> <span class=\"token deliminator\">?&gt;<\/span>\r\n<\/code><\/pre>\n<p>With your web browser you can visit <a href=\"http:\/\/yourdomain.com\/info.php\">http:\/\/yourdomain.com\/info.php<\/a> and see all kinds of information about PHP on the server.<\/p>\n<h5 id=\"1-type-of-linux\">1. Type Of Linux<\/h5>\n<p>You should see an indication of the base operating system in the first line of the report \u201cSystem\u201d. Knowing that you have a Debian, Ubuntu or CentOS system might be helpful for more advanced configurations.<\/p>\n<h5 id=\"2-web-server\">2. Web Server<\/h5>\n<p>This is probably Apache. If you see any mention of Apache in the initial section or in the headings below, it\u2019s Apache. The most likely alternative is Nginx. For simple sites the biggest difference between web servers is the fact that rewrite rules are different, so if you are creating friendly URLs you need to know the correct syntax to use.<\/p>\n<h5 id=\"3-php-version\">3. PHP Version<\/h5>\n<p>The version of PHP will be right at the top of the document next to the PHP logo. It might be a long string \u2014 you are mostly interested in one number after the dot. So if you see \u201cPHP Version 5.4.4-14+deb7u14,\u201d all you need to note down is PHP 5.4.<\/p>\n<h5 id=\"4-php-modules\">4. PHP Modules<\/h5>\n<p>PuPHPet will install some default modules for you. If you want to be sure certain things are present, however, you can specify them. The PHP modules are listed, with details about them, after the \u201cCore\u201d section of the report. Common modules to look out for are:<\/p>\n<ul>\n<li>curl: for making requests to other servers<\/li>\n<li>gd and\/or imagemagick: used for image manipulation<\/li>\n<li>mysql, mysqli and pdo: methods of connecting to the database. You should probably be using mysqli or pdo at this point<\/li>\n<\/ul>\n<h5 id=\"5-resource-limits-and-configuration-options\">5. Resource Limits And Configuration Options<\/h5>\n<p>Under the section \u201cCore\u201d you will find all kinds of information about PHP. Useful settings to note down are:<\/p>\n<ul>\n<li><code>max_execution_time<\/code>: how long a script may run for<\/li>\n<li><code>max_file_uploads<\/code>: how many files may be uploaded at once<\/li>\n<li><code>max_input_vars<\/code>: how many fields a form is limited to<\/li>\n<li><code>post_max_size<\/code>: the maximum size of a form post<\/li>\n<li><code>upload_max_filesize<\/code>: file upload limit<\/li>\n<\/ul>\n<p>Depending on your hosting, some of these might be able to be changed. For example, you can usually increase the size of files that can be uploaded.<\/p>\n<h5 id=\"6-mysql-version\">6. MySQL Version<\/h5>\n<p>Under the PHP module information for mysql, mysqli and pdo_mysql you should see a value for \u201cClient Library Version\u201d: this is your MySQL version. Again, knowing just one value after the dot is fine.<\/p>\n<h4 id=\"beware-of-old-php\">BEWARE OF OLD PHP!<\/h4>\n<p>On doing this test, if you discover that the server is running anything older than PHP 5.4 \u2014 <strong>stop now<\/strong> and find out how to upgrade the hosting to a more recent PHP version. For a new site I\u2019d suggest ensuring you are on at least PHP 5.5. Version 5.6 is even better.<\/p>\n<p>PHP5.3 is not only end-of-life, it\u2019s also really slow in comparison to newer PHP versions. It\u2019s a good plan to make sure you are using a supported version of a core technology on your site. Through helping customers at Perch we\u2019ve found that, in general, hosts are happy to upgrade you to a newer server if you put in a request. If they are not, I\u2019d <a href=\"http:\/\/www.lornajane.net\/posts\/2014\/how-to-choose-php-hosting\">seriously consider moving hosts<\/a>.<\/p>\n<h3 id=\"step-3-build-a-project-with-puphpet\">Step 3: Build A Project With PuPHPet<\/h3>\n<p>Now that you have your information to hand, you can use it to build a project with PuPHPet that reasonably closely mirrors your environment. I\u2019ll walk you through the interface. If I don\u2019t mention a setting and you don\u2019t have an opinion about it, then leave the default value.<\/p>\n<h4 id=\"deploy-target\">DEPLOY TARGET<\/h4>\n<p>On the <a href=\"https:\/\/puphpet.com\/\">PuPHPet website<\/a>, choose <strong>Deploy Target \u2192 Locally<\/strong> in the sidebar. In the main screen select <strong>VirtualBox<\/strong> as the provider.<\/p>\n<p>Under <strong>Distro<\/strong> you can select the type of Linux you are using, if it is listed. If it isn\u2019t listed I would suggest using the default Ubuntu.<\/p>\n<p>The <strong>IP address<\/strong> needs to be something unique on your network, not a real external IP. I tend to use IP addresses with the format 10.1.0.130 for VMs.<\/p>\n<p>The <strong>hostname<\/strong> identifies your server. Again this can be something made up.<\/p>\n<p><strong>Shared Folders<\/strong> is an important setting. When you use a virtual machine you are running an entirely new computer with its own file system on your computer. If you want to continue editing files in the usual place on your computer \u2014 and not have to transfer them into the VM to view them \u2014 you need to map the drive on your own machine to one on the VM. That\u2019s what we are doing when we create a shared folder.<\/p>\n<p>On my Mac, inside <i>\/Users\/rachel\/Sites<\/i> I have a folder called <i>vm<\/i>. This is where I place a folder for each of my projects. When I set up a VM I use the path <i>\/Users\/rachel\/Sites\/vm<\/i> as the folder source, mapped to <i>\/var\/www<\/i> as the folder target.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt-small.png\" alt=\"Screenshot of PuPHPet configuration screen.\" \/><\/a><\/p>\n<figcaption>Setting up shared folders on PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If this is a new site and you don\u2019t already have files created, at this point I\u2019d suggest creating a folder for the project you are setting up the virtual machine for, and pop an <i>index.html<\/i> into that folder with <code>&lt;h1&gt;It works!&lt;\/h1&gt;<\/code> in it. Just so you can see that things are working after running setup.<\/p>\n<p>Finally, if you are on Mac OS X or Linux, select <strong>NFS<\/strong> as the shared folder type.<\/p>\n<h4 id=\"system\">SYSTEM<\/h4>\n<p>You can probably leave everything here as the default. It\u2019s worth knowing that under this option you can configure cron jobs for scheduled tasks and add system packages if you have certain things you want to install.<\/p>\n<h4 id=\"web-servers\">WEB SERVERS<\/h4>\n<p>Unless you have identified that you have Nginx, select <strong>Apache<\/strong> and check <strong>Install Apache<\/strong>. This will open up a further set of options. Here is where you configure your virtual hosts.<\/p>\n<p>A virtual host means that instead of having one website per server you can have multiple websites on a server. With virtual machines you can create as many as you like, so it\u2019s up to you whether you configure a single virtual host or more. What you should not do is configure one virtual host and then stick multiple websites into subfolders of that host. Each site needs either its own VM or a virtual host on a VM so that the path of your files from root does not change when you go live.<\/p>\n<p>The basic settings for a virtual host are as follows:<\/p>\n<p><strong>Server name:<\/strong> clientname.dev or any made up domain you like.<\/p>\n<p><strong>Document root<\/strong>: from <i>\/var\/www<\/i>. If you have shared a folder in the way I suggested, <i>\/var\/www<\/i> is that directory on your computer \u2014 the directory with all your project folders in it \u2014 so you can specify <i>\/var\/www\/clientname<\/i> here.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt-small.png\" alt=\"Screenshot of virtual host setup.\" \/><\/a><\/p>\n<figcaption>Configuring a virtual host with PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If you want to add another host, scroll down to <strong>Add an Apache vhost<\/strong> and create your next one.<\/p>\n<h4 id=\"languages\">LANGUAGES<\/h4>\n<p>Select <strong>PHP<\/strong> and check <strong>Install PHP<\/strong>.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt-small.png\" alt=\"Screenshot of language setup.\" \/><\/a><\/p>\n<figcaption>Setting up languages on PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>Under <strong>PHP Version<\/strong> select the version you identified as being on your host.<\/p>\n<p>Under <strong>PHP Modules<\/strong> add any specific modules (for example, \u201cgd\u201d and \u201ccurl\u201d) that you identified as present on your hosting.<\/p>\n<h4 id=\"databases\">DATABASES<\/h4>\n<p>Select <strong>MySQL<\/strong> and if you know the version of MySQL select it here.<\/p>\n<p>You can now create a database user with a password. I tend to just use the name \u201cvagrant\u201d for both on local development machines.<\/p>\n<p>You can also create a database ready to use for your site. Remember these details as you\u2019ll need them to install your CMS or use in your own custom code that connects to MySQL.<\/p>\n<h4 id=\"mail-tools\">MAIL TOOLS<\/h4>\n<p>If you are using a CMS then it\u2019s a good idea to have some way of looking at the emails it sends. PuPHPet suggests you install <a href=\"http:\/\/mailcatcher.me\/\">MailCatcher<\/a> locally for this task as it saves configuring a mail server.<\/p>\n<p>That should be it for setup. Select <strong>Create Archive<\/strong> from the sidebar and download your file. Unzip the file and put it somewhere on your system \u2014 mine all live in my home directory in a subdirectory called <i>vagrant<\/i>.<\/p>\n<h3 id=\"your-first-virtual-machine\">Your First Virtual Machine<\/h3>\n<p>You are almost ready to go. Open up a terminal window and change into the folder where you unzipped your project.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">cd <span class=\"token operator\">\/<\/span>Users<span class=\"token operator\">\/<\/span>rachel<span class=\"token operator\">\/<\/span>vagrant<span class=\"token operator\">\/<\/span>mynewproject\r\n<\/code><\/pre>\n<p>Now run the command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant up\r\n<\/code><\/pre>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt-small.png\" alt=\"Screenshot of terminal window.\" \/><\/a><\/p>\n<figcaption>Running the <code>vagrant up<\/code> command. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>The first time you do this it will take a while. Vagrant will see that you don\u2019t already have the base operating system downloaded so it will download it. When you create a new project in the future and use the same version of Linux, Vagrant will copy the box so this will be quicker.<\/p>\n<p>You will see a lot of stuff scrolling by \u2014 don\u2019t worry about it; it will take a few minutes to get everything set up for you. If you are using NFS you will be prompted for your password during the process to allow Vagrant to edit your exports file.<\/p>\n<p>Once Vagrant has finished you should be able to go to the domain you set up for your virtual host using your web browser and see your site! If you make changes to your files and reload the browser, you will see your changes.<\/p>\n<h3 id=\"basic-vagrant-commands\">Basic Vagrant Commands<\/h3>\n<p>Vagrant is controlled with a few simple commands from the command line. We\u2019ve already used<code>vagrant up<\/code> which will start up a VM. If the VM is brand-new it will also <em>provision<\/em> it \u2014 setting up the packages you configured to be installed, creating your virtual hosts, and so on. If you run<code>vagrant up<\/code> on a VM that has already been provisioned, Vagrant will not reprovision it.<\/p>\n<p>Understanding the commands and what they will do is important, but if you prefer to stay out of the command line, take a look at <a href=\"http:\/\/vagrantmanager.com\/\">Vagrant Manager<\/a>. Vagrant Manager is an application for Mac OS X and Windows that gives you a nice way to manage your VMs and also see which are running at any one time.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt-small.png\" alt=\"Screenshot of Vagrant Manager website.\" \/><\/a><\/p>\n<figcaption>The Vagrant Manager website. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If you want to reprovision a VM, first make sure it is running with <code>vagrant up<\/code>, then type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant provision\r\n<\/code><\/pre>\n<p>To stop a VM from running you can use:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant suspend\r\n<\/code><\/pre>\n<p>This will pause the box and give back your host machine the memory it uses, but it won\u2019t delete anything on the VM or shut down the operating system. If you run <code>vagrant up<\/code> again, it will come back just as it was before you paused it.<\/p>\n<p>To shut down the operating system on a VM use:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant halt\r\n<\/code><\/pre>\n<p>Running <code>vagrant up<\/code> on a halted box boots up the system again.<\/p>\n<p>If you want to set your virtual machine right back to its initial state, run:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant destroy\r\n<\/code><\/pre>\n<p>This will delete anything you installed on the server. It won\u2019t touch the files in your mapped drive as those are hosted on the host computer, but it will delete MySQL databases, for example. If you want the data from those, export it first.<\/p>\n<p>To access the command line on the VM type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant ssh\r\n<\/code><\/pre>\n<p>You will then be on your VM and can run any commands. A common thing you might do is import or export a database file.<\/p>\n<h4 id=\"importing-a-database-file\">IMPORTING A DATABASE FILE<\/h4>\n<p>Our process creates an empty database. If you are installing a CMS or some other software, it is likely that it will create the tables for you. If you want to import a file exported from your live server, you can do that at the command line.<\/p>\n<p>Use <code>vagrant ssh<\/code> to reach the command line of your VM. Make sure your exported database SQL script is in the root of your site, within the shared folder. Then, type the following (I\u2019m assuming a database name of <i>dbMySite<\/i>, username and password both set to \u201cvagrant\u201d.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">mysql <span class=\"token operator\">-<\/span>u vagrant <span class=\"token operator\">-<\/span>p dbMySite <span class=\"token operator\">&lt;<\/span> <span class=\"token operator\">\/<\/span>var<span class=\"token operator\">\/<\/span>www<span class=\"token operator\">\/<\/span>clientname<span class=\"token operator\">\/<\/span>db<span class=\"token punctuation\">.<\/span>sql\r\n<\/code><\/pre>\n<p>You will then be prompted for the password. Type your password and the database will be imported.<\/p>\n<h3 id=\"deploying-live\">Deploying Live<\/h3>\n<p>After following these steps you should have a nice way to work locally on one or more projects at a time. You can set up virtual machines that are similar to live, and you are not developing in subfolders. We can continue to enhance our workflow by moving away from FTP to using a deployment service.<\/p>\n<h4 id=\"get-files-into-source-control\">GET FILES INTO SOURCE CONTROL<\/h4>\n<p>If you are already using Git, then you are part of the way to simple deployments. If not, that is the first thing we need to do. Our process will be to commit files into Git on our own computer, then create an account on a hosted Git repository and push our files to the live server from there.<\/p>\n<p>If you don\u2019t already have Git running locally, <a href=\"http:\/\/git-scm.com\/downloads\">download and install Git<\/a>.<\/p>\n<p>At the command line, give Git your name using the following command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git config <span class=\"token operator\">--<\/span>global user<span class=\"token punctuation\">.<\/span>name <span class=\"token string\">\"YOUR NAME\"<\/span>\r\n<\/code><\/pre>\n<p>Use the next command to give Git your email address. We are going to use a hosted repository, so use the email address here that you will use to sign up.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git config <span class=\"token operator\">--<\/span>global user<span class=\"token punctuation\">.<\/span>email <span class=\"token string\">\"YOUR EMAIL ADDRESS\"<\/span>\r\n<\/code><\/pre>\n<p>Stay on the command line and change to the directory where you keep your site files. If your files are in <i>\/Users\/rachel\/Sites\/vm\/clientname<\/i>, you would type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">cd <span class=\"token operator\">\/<\/span>Users<span class=\"token operator\">\/<\/span>rachel<span class=\"token operator\">\/<\/span>Sites<span class=\"token operator\">\/<\/span>vm<span class=\"token operator\">\/<\/span>clientname\r\n<\/code><\/pre>\n<p>The next command tells Git that we want to create a new Git repository here:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git init\r\n<\/code><\/pre>\n<p>We then add our files:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git add <span class=\"token punctuation\">.<\/span>\r\n<\/code><\/pre>\n<p>Then commit the files:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git commit <span class=\"token operator\">-<\/span>m <span class=\"token string\">\"Adding initial files\"<\/span>\r\n<\/code><\/pre>\n<p>The comment in quotes after <code>-m<\/code> is a message describing the commit. Your local files are now in Git! As you work you can add and commit files.<\/p>\n<p>If you would rather not work in the command line, there are plenty of applications to help you work with Git. <a href=\"http:\/\/www.git-tower.com\/\">Tower<\/a> is a popular choice. The people who develop Tower have also produced a great book on <a href=\"http:\/\/www.git-tower.com\/learn\/ebook\">learning version control with Git<\/a>. You can read online free or purchase an ebook version.<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>In this article I\u2019ll be taking a look at how to build a simple yet robust workflow for developing sites that require PHP and MySQL. I\u2019ll show you how to use Vagrant to create and run a web server on your own computer, with the version of PHP your live site runs. I also demonstrate [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 17,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [5, 1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/183"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=183"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/183\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/17"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=183"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=183"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=183"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/183\/meta"
+    }]
+  }
+}, {
+  "id": 177,
+  "date": "2015-07-17T09:02:03",
+  "date_gmt": "2015-07-17T09:02:03",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=177"
+  },
+  "modified": "2015-07-17T09:02:03",
+  "modified_gmt": "2015-07-17T09:02:03",
+  "slug": "testing-blog-posts",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=177",
+  "title": {
+    "rendered": "testing blog posts"
+  },
+  "content": {
+    "rendered": "<p>Phasellus accumsan cursus velit. Etiam sit amet orci eget eros faucibus tincidunt. Donec posuere vulputate arcu. Nullam cursus lacinia erat. Proin faucibus arcu quis ante.<\/p>\n<p>Phasellus magna. Quisque id odio. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Aenean vulputate eleifend tellus. Proin faucibus arcu quis ante.<\/p>\n<p>Pellentesque auctor neque nec urna. Duis lobortis massa imperdiet quam. Nunc interdum lacus sit amet orci. Praesent egestas tristique nibh. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.<\/p>\n<p>Etiam imperdiet imperdiet orci. Donec id justo. Morbi nec metus. Nunc nulla. Proin faucibus arcu quis ante.<\/p>\n<p>Cras ultricies mi eu turpis hendrerit fringilla. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Cras dapibus. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Etiam ultricies nisi vel augue.<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>Phasellus accumsan cursus velit. Etiam sit amet orci eget eros faucibus tincidunt. Donec posuere vulputate arcu. Nullam cursus lacinia erat. Proin faucibus arcu quis ante. Phasellus magna. Quisque id odio. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Aenean vulputate eleifend tellus. Proin faucibus arcu quis ante. Pellentesque auctor neque nec urna. Duis [&hellip;]<\/p>\n"
+  },
+  "author": 3,
+  "featured_media": 181,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/177"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/3"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=177"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/177\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/181"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=177"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=177"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=177"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/177\/meta"
+    }]
+  }
+}, {
+  "id": 178,
+  "date": "2015-07-17T07:15:12",
+  "date_gmt": "2015-07-17T07:15:12",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=178"
+  },
+  "modified": "2015-07-17T07:21:41",
+  "modified_gmt": "2015-07-17T07:21:41",
+  "slug": "a-simple-workflow-from-development-to-deployment",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=178",
+  "title": {
+    "rendered": "A Simple Workflow From Development To Deployment"
+  },
+  "content": {
+    "rendered": "<p>In this article I\u2019ll be taking a look at how to build a <strong>simple yet robust workflow for developing sites<\/strong> that require PHP and MySQL. I\u2019ll show you how to use <a href=\"https:\/\/www.vagrantup.com\/\">Vagrant<\/a> to create and run a web server on your own computer, with the version of PHP your live site runs. I also demonstrate a process for using a hosted service to deploy files in a robust way to your live server.<\/p>\n<p>This article is for you if you currently have no way to test your PHP and MySQL sites locally, or use something like <a href=\"https:\/\/www.mamp.info\/\">MAMP<\/a> or <a href=\"https:\/\/www.apachefriends.org\/\">XAMPP<\/a>. The second half of the article will help you move away from uploading files using FTP to a process that is far less likely to cause you problems.<\/p>\n<h3 id=\"the-aim-of-a-local-development-environment\">The Aim Of A Local Development Environment<\/h3>\n<p>When designing and developing your website, you should try to match the live web server as much as possible. This should include ensuring that paths from root don\u2019t change between local and live versions, and that PHP modules and permissions are the same in both places. This approach will reduce the possibility of something going wrong as you push the site live. It should also enable you to come back to a site to make changes and updates and know that you can then deploy those changes without breaking the running site.<\/p>\n<p><strong>A good local development environment saves you time and stress.<\/strong> It gives you a place to test things out. It means that you can pick up a project, make some changes, deploy them and bill your client for another job well done.<\/p>\n<h3 id=\"disaster-free-deployments\">Disaster-Free Deployments<\/h3>\n<p>If you keep a list of changes made to your site and then transfer the files one by one, you leave yourself open to difficulties caused by human error and connectivity problems. Many issues we see supporting our products are down to failed FTP transfers. A key file has failed to upload, and it is deep in the core product. <strong>It\u2019s easy to forget to transfer a file<\/strong>, and it\u2019s also easy to leave old files lying around. If the software you use has removed some files to resolve a security issue, leaving them on the server could leave you at risk even if you have upgraded.<\/p>\n<p>A good deployment method ensures that the files on your live server exactly match those locally. If anything fails to deploy, you should be notified so you can fix the issue before your client or their customers see it first!<\/p>\n<h3 id=\"step-1-grab-some-tools\">Step 1: Grab Some Tools<\/h3>\n<p>We\u2019re going to be using some free tools to create our development environment. First, download <a href=\"https:\/\/www.virtualbox.org\/\">VirtualBox<\/a>, a free application which allows you to run a virtual machine on your computer. You may have already come across virtual machines if you work on a Mac and use a Windows virtual machine for testing. A virtual machine is exactly as the name suggests, a complete virtual OS running on your computer.<\/p>\n<p>Install the version of VirtualBox for your operating system.<\/p>\n<p>Now download and install <a href=\"https:\/\/www.vagrantup.com\/\">Vagrant<\/a>. Vagrant is an application that helps you manage virtual machines.<\/p>\n<p>It\u2019s possible to work with virtual machines without using Vagrant. However, each time you want to set up a new VM you have to go through the process of installing web server software and configuring the server. Vagrant helps you automate that process so that within a few minutes you can have a local web server running your site.<\/p>\n<p>If you are on Mac OS X or Linux, at the command line run the following command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">sudo vagrant plugin install vagrant<span class=\"token operator\">-<\/span>bindfs\r\n<\/code><\/pre>\n<p>For all operating systems, run the next command to install <a href=\"https:\/\/github.com\/smdahlen\/vagrant-hostmanager\">Vagrant Host Manager<\/a> to save you editing your hosts file by hand.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">sudo vagrant plugin install vagrant<span class=\"token operator\">-<\/span>hostmanager\r\n<\/code><\/pre>\n<p>Vagrant requires a project folder with a text file saved with the name <i>Vagrantfile<\/i> in the root. In the Vagrantfile you specify how the VM should be set up. You can write your own configuration scripts for Vagrant, but for most cases you don\u2019t need to as someone else has already done the hard work for you. Here we\u2019re going to use a tool called <a href=\"https:\/\/puphpet.com\/\">PuPHPet<\/a>.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt-small.png\" alt=\"Screenshot of PuPHPet website.\" \/><\/a><\/p>\n<figcaption>The PuPHPet website. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/02-puphpet-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<h4 id=\"puphpet\">PUPHPET<\/h4>\n<p>PuPHPet is an online configuration tool that helps you configure a Vagrant project. You work through a form on the website, selecting options for your site, and then download a package containing a Vagrantfile and other scripts to set up a virtual machine.<\/p>\n<h3 id=\"step-2-discover-what-is-on-your-live-server\">Step 2: Discover What Is On Your Live Server<\/h3>\n<p>To use PuPHPet to set up a development server that is as close as possible to the hosting you will use for the site, first find out what is on the live server. You want to know:<\/p>\n<ol>\n<li>Type of Linux<\/li>\n<li>Web server: Apache or Nginx (probably Apache if shared hosting)<\/li>\n<li>PHP version: this will be something like PHP 5.4 or 5.5, etc.<\/li>\n<li>The configured resource limits for file upload, memory and so on<\/li>\n<li>Installed PHP modules; for example: gd, curl<\/li>\n<li>MySQL version<\/li>\n<\/ol>\n<p>If you don\u2019t yet have access to the hosting then you will need to ask the host these questions. If you do have access then you can find out for yourself.<\/p>\n<p>Upload a file to the server named <i>info.php<\/i> that contains the following PHP function:<\/p>\n<pre class=\" language-php\"><code class=\" language-php\"><span class=\"token deliminator\">&lt;?php<\/span> <span class=\"token function\">phpinfo<span class=\"token punctuation\">(<\/span><\/span><span class=\"token punctuation\">)<\/span><span class=\"token punctuation\">;<\/span> <span class=\"token deliminator\">?&gt;<\/span>\r\n<\/code><\/pre>\n<p>With your web browser you can visit <a href=\"http:\/\/yourdomain.com\/info.php\">http:\/\/yourdomain.com\/info.php<\/a> and see all kinds of information about PHP on the server.<\/p>\n<h5 id=\"1-type-of-linux\">1. Type Of Linux<\/h5>\n<p>You should see an indication of the base operating system in the first line of the report \u201cSystem\u201d. Knowing that you have a Debian, Ubuntu or CentOS system might be helpful for more advanced configurations.<\/p>\n<h5 id=\"2-web-server\">2. Web Server<\/h5>\n<p>This is probably Apache. If you see any mention of Apache in the initial section or in the headings below, it\u2019s Apache. The most likely alternative is Nginx. For simple sites the biggest difference between web servers is the fact that rewrite rules are different, so if you are creating friendly URLs you need to know the correct syntax to use.<\/p>\n<h5 id=\"3-php-version\">3. PHP Version<\/h5>\n<p>The version of PHP will be right at the top of the document next to the PHP logo. It might be a long string \u2014 you are mostly interested in one number after the dot. So if you see \u201cPHP Version 5.4.4-14+deb7u14,\u201d all you need to note down is PHP 5.4.<\/p>\n<h5 id=\"4-php-modules\">4. PHP Modules<\/h5>\n<p>PuPHPet will install some default modules for you. If you want to be sure certain things are present, however, you can specify them. The PHP modules are listed, with details about them, after the \u201cCore\u201d section of the report. Common modules to look out for are:<\/p>\n<ul>\n<li>curl: for making requests to other servers<\/li>\n<li>gd and\/or imagemagick: used for image manipulation<\/li>\n<li>mysql, mysqli and pdo: methods of connecting to the database. You should probably be using mysqli or pdo at this point<\/li>\n<\/ul>\n<h5 id=\"5-resource-limits-and-configuration-options\">5. Resource Limits And Configuration Options<\/h5>\n<p>Under the section \u201cCore\u201d you will find all kinds of information about PHP. Useful settings to note down are:<\/p>\n<ul>\n<li><code>max_execution_time<\/code>: how long a script may run for<\/li>\n<li><code>max_file_uploads<\/code>: how many files may be uploaded at once<\/li>\n<li><code>max_input_vars<\/code>: how many fields a form is limited to<\/li>\n<li><code>post_max_size<\/code>: the maximum size of a form post<\/li>\n<li><code>upload_max_filesize<\/code>: file upload limit<\/li>\n<\/ul>\n<p>Depending on your hosting, some of these might be able to be changed. For example, you can usually increase the size of files that can be uploaded.<\/p>\n<h5 id=\"6-mysql-version\">6. MySQL Version<\/h5>\n<p>Under the PHP module information for mysql, mysqli and pdo_mysql you should see a value for \u201cClient Library Version\u201d: this is your MySQL version. Again, knowing just one value after the dot is fine.<\/p>\n<h4 id=\"beware-of-old-php\">BEWARE OF OLD PHP!<\/h4>\n<p>On doing this test, if you discover that the server is running anything older than PHP 5.4 \u2014 <strong>stop now<\/strong> and find out how to upgrade the hosting to a more recent PHP version. For a new site I\u2019d suggest ensuring you are on at least PHP 5.5. Version 5.6 is even better.<\/p>\n<p>PHP5.3 is not only end-of-life, it\u2019s also really slow in comparison to newer PHP versions. It\u2019s a good plan to make sure you are using a supported version of a core technology on your site. Through helping customers at Perch we\u2019ve found that, in general, hosts are happy to upgrade you to a newer server if you put in a request. If they are not, I\u2019d <a href=\"http:\/\/www.lornajane.net\/posts\/2014\/how-to-choose-php-hosting\">seriously consider moving hosts<\/a>.<\/p>\n<h3 id=\"step-3-build-a-project-with-puphpet\">Step 3: Build A Project With PuPHPet<\/h3>\n<p>Now that you have your information to hand, you can use it to build a project with PuPHPet that reasonably closely mirrors your environment. I\u2019ll walk you through the interface. If I don\u2019t mention a setting and you don\u2019t have an opinion about it, then leave the default value.<\/p>\n<h4 id=\"deploy-target\">DEPLOY TARGET<\/h4>\n<p>On the <a href=\"https:\/\/puphpet.com\/\">PuPHPet website<\/a>, choose <strong>Deploy Target \u2192 Locally<\/strong> in the sidebar. In the main screen select <strong>VirtualBox<\/strong> as the provider.<\/p>\n<p>Under <strong>Distro<\/strong> you can select the type of Linux you are using, if it is listed. If it isn\u2019t listed I would suggest using the default Ubuntu.<\/p>\n<p>The <strong>IP address<\/strong> needs to be something unique on your network, not a real external IP. I tend to use IP addresses with the format 10.1.0.130 for VMs.<\/p>\n<p>The <strong>hostname<\/strong> identifies your server. Again this can be something made up.<\/p>\n<p><strong>Shared Folders<\/strong> is an important setting. When you use a virtual machine you are running an entirely new computer with its own file system on your computer. If you want to continue editing files in the usual place on your computer \u2014 and not have to transfer them into the VM to view them \u2014 you need to map the drive on your own machine to one on the VM. That\u2019s what we are doing when we create a shared folder.<\/p>\n<p>On my Mac, inside <i>\/Users\/rachel\/Sites<\/i> I have a folder called <i>vm<\/i>. This is where I place a folder for each of my projects. When I set up a VM I use the path <i>\/Users\/rachel\/Sites\/vm<\/i> as the folder source, mapped to <i>\/var\/www<\/i> as the folder target.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt-small.png\" alt=\"Screenshot of PuPHPet configuration screen.\" \/><\/a><\/p>\n<figcaption>Setting up shared folders on PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/03-nfs-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If this is a new site and you don\u2019t already have files created, at this point I\u2019d suggest creating a folder for the project you are setting up the virtual machine for, and pop an <i>index.html<\/i> into that folder with <code>&lt;h1&gt;It works!&lt;\/h1&gt;<\/code> in it. Just so you can see that things are working after running setup.<\/p>\n<p>Finally, if you are on Mac OS X or Linux, select <strong>NFS<\/strong> as the shared folder type.<\/p>\n<h4 id=\"system\">SYSTEM<\/h4>\n<p>You can probably leave everything here as the default. It\u2019s worth knowing that under this option you can configure cron jobs for scheduled tasks and add system packages if you have certain things you want to install.<\/p>\n<h4 id=\"web-servers\">WEB SERVERS<\/h4>\n<p>Unless you have identified that you have Nginx, select <strong>Apache<\/strong> and check <strong>Install Apache<\/strong>. This will open up a further set of options. Here is where you configure your virtual hosts.<\/p>\n<p>A virtual host means that instead of having one website per server you can have multiple websites on a server. With virtual machines you can create as many as you like, so it\u2019s up to you whether you configure a single virtual host or more. What you should not do is configure one virtual host and then stick multiple websites into subfolders of that host. Each site needs either its own VM or a virtual host on a VM so that the path of your files from root does not change when you go live.<\/p>\n<p>The basic settings for a virtual host are as follows:<\/p>\n<p><strong>Server name:<\/strong> clientname.dev or any made up domain you like.<\/p>\n<p><strong>Document root<\/strong>: from <i>\/var\/www<\/i>. If you have shared a folder in the way I suggested, <i>\/var\/www<\/i> is that directory on your computer \u2014 the directory with all your project folders in it \u2014 so you can specify <i>\/var\/www\/clientname<\/i> here.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt-small.png\" alt=\"Screenshot of virtual host setup.\" \/><\/a><\/p>\n<figcaption>Configuring a virtual host with PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/04-vhosts-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If you want to add another host, scroll down to <strong>Add an Apache vhost<\/strong> and create your next one.<\/p>\n<h4 id=\"languages\">LANGUAGES<\/h4>\n<p>Select <strong>PHP<\/strong> and check <strong>Install PHP<\/strong>.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt-small.png\" alt=\"Screenshot of language setup.\" \/><\/a><\/p>\n<figcaption>Setting up languages on PuPHPet. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/05-puphpet-php-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>Under <strong>PHP Version<\/strong> select the version you identified as being on your host.<\/p>\n<p>Under <strong>PHP Modules<\/strong> add any specific modules (for example, \u201cgd\u201d and \u201ccurl\u201d) that you identified as present on your hosting.<\/p>\n<h4 id=\"databases\">DATABASES<\/h4>\n<p>Select <strong>MySQL<\/strong> and if you know the version of MySQL select it here.<\/p>\n<p>You can now create a database user with a password. I tend to just use the name \u201cvagrant\u201d for both on local development machines.<\/p>\n<p>You can also create a database ready to use for your site. Remember these details as you\u2019ll need them to install your CMS or use in your own custom code that connects to MySQL.<\/p>\n<h4 id=\"mail-tools\">MAIL TOOLS<\/h4>\n<p>If you are using a CMS then it\u2019s a good idea to have some way of looking at the emails it sends. PuPHPet suggests you install <a href=\"http:\/\/mailcatcher.me\/\">MailCatcher<\/a> locally for this task as it saves configuring a mail server.<\/p>\n<p>That should be it for setup. Select <strong>Create Archive<\/strong> from the sidebar and download your file. Unzip the file and put it somewhere on your system \u2014 mine all live in my home directory in a subdirectory called <i>vagrant<\/i>.<\/p>\n<h3 id=\"your-first-virtual-machine\">Your First Virtual Machine<\/h3>\n<p>You are almost ready to go. Open up a terminal window and change into the folder where you unzipped your project.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">cd <span class=\"token operator\">\/<\/span>Users<span class=\"token operator\">\/<\/span>rachel<span class=\"token operator\">\/<\/span>vagrant<span class=\"token operator\">\/<\/span>mynewproject\r\n<\/code><\/pre>\n<p>Now run the command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant up\r\n<\/code><\/pre>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt-small.png\" alt=\"Screenshot of terminal window.\" \/><\/a><\/p>\n<figcaption>Running the <code>vagrant up<\/code> command. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/06-vagrant-up-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>The first time you do this it will take a while. Vagrant will see that you don\u2019t already have the base operating system downloaded so it will download it. When you create a new project in the future and use the same version of Linux, Vagrant will copy the box so this will be quicker.<\/p>\n<p>You will see a lot of stuff scrolling by \u2014 don\u2019t worry about it; it will take a few minutes to get everything set up for you. If you are using NFS you will be prompted for your password during the process to allow Vagrant to edit your exports file.<\/p>\n<p>Once Vagrant has finished you should be able to go to the domain you set up for your virtual host using your web browser and see your site! If you make changes to your files and reload the browser, you will see your changes.<\/p>\n<h3 id=\"basic-vagrant-commands\">Basic Vagrant Commands<\/h3>\n<p>Vagrant is controlled with a few simple commands from the command line. We\u2019ve already used<code>vagrant up<\/code> which will start up a VM. If the VM is brand-new it will also <em>provision<\/em> it \u2014 setting up the packages you configured to be installed, creating your virtual hosts, and so on. If you run<code>vagrant up<\/code> on a VM that has already been provisioned, Vagrant will not reprovision it.<\/p>\n<p>Understanding the commands and what they will do is important, but if you prefer to stay out of the command line, take a look at <a href=\"http:\/\/vagrantmanager.com\/\">Vagrant Manager<\/a>. Vagrant Manager is an application for Mac OS X and Windows that gives you a nice way to manage your VMs and also see which are running at any one time.<\/p>\n<figure><a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt.png\"><img src=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt-small.png\" alt=\"Screenshot of Vagrant Manager website.\" \/><\/a><\/p>\n<figcaption>The Vagrant Manager website. (<a href=\"http:\/\/media.mediatemple.netdna-cdn.com\/wp-content\/uploads\/2015\/07\/07-vagrant-manager-opt.png\">View large version<\/a>)<\/figcaption>\n<\/figure>\n<p>If you want to reprovision a VM, first make sure it is running with <code>vagrant up<\/code>, then type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant provision\r\n<\/code><\/pre>\n<p>To stop a VM from running you can use:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant suspend\r\n<\/code><\/pre>\n<p>This will pause the box and give back your host machine the memory it uses, but it won\u2019t delete anything on the VM or shut down the operating system. If you run <code>vagrant up<\/code> again, it will come back just as it was before you paused it.<\/p>\n<p>To shut down the operating system on a VM use:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant halt\r\n<\/code><\/pre>\n<p>Running <code>vagrant up<\/code> on a halted box boots up the system again.<\/p>\n<p>If you want to set your virtual machine right back to its initial state, run:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant destroy\r\n<\/code><\/pre>\n<p>This will delete anything you installed on the server. It won\u2019t touch the files in your mapped drive as those are hosted on the host computer, but it will delete MySQL databases, for example. If you want the data from those, export it first.<\/p>\n<p>To access the command line on the VM type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">vagrant ssh\r\n<\/code><\/pre>\n<p>You will then be on your VM and can run any commands. A common thing you might do is import or export a database file.<\/p>\n<h4 id=\"importing-a-database-file\">IMPORTING A DATABASE FILE<\/h4>\n<p>Our process creates an empty database. If you are installing a CMS or some other software, it is likely that it will create the tables for you. If you want to import a file exported from your live server, you can do that at the command line.<\/p>\n<p>Use <code>vagrant ssh<\/code> to reach the command line of your VM. Make sure your exported database SQL script is in the root of your site, within the shared folder. Then, type the following (I\u2019m assuming a database name of <i>dbMySite<\/i>, username and password both set to \u201cvagrant\u201d.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">mysql <span class=\"token operator\">-<\/span>u vagrant <span class=\"token operator\">-<\/span>p dbMySite <span class=\"token operator\">&lt;<\/span> <span class=\"token operator\">\/<\/span>var<span class=\"token operator\">\/<\/span>www<span class=\"token operator\">\/<\/span>clientname<span class=\"token operator\">\/<\/span>db<span class=\"token punctuation\">.<\/span>sql\r\n<\/code><\/pre>\n<p>You will then be prompted for the password. Type your password and the database will be imported.<\/p>\n<h3 id=\"deploying-live\">Deploying Live<\/h3>\n<p>After following these steps you should have a nice way to work locally on one or more projects at a time. You can set up virtual machines that are similar to live, and you are not developing in subfolders. We can continue to enhance our workflow by moving away from FTP to using a deployment service.<\/p>\n<h4 id=\"get-files-into-source-control\">GET FILES INTO SOURCE CONTROL<\/h4>\n<p>If you are already using Git, then you are part of the way to simple deployments. If not, that is the first thing we need to do. Our process will be to commit files into Git on our own computer, then create an account on a hosted Git repository and push our files to the live server from there.<\/p>\n<p>If you don\u2019t already have Git running locally, <a href=\"http:\/\/git-scm.com\/downloads\">download and install Git<\/a>.<\/p>\n<p>At the command line, give Git your name using the following command:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git config <span class=\"token operator\">--<\/span>global user<span class=\"token punctuation\">.<\/span>name <span class=\"token string\">\"YOUR NAME\"<\/span>\r\n<\/code><\/pre>\n<p>Use the next command to give Git your email address. We are going to use a hosted repository, so use the email address here that you will use to sign up.<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git config <span class=\"token operator\">--<\/span>global user<span class=\"token punctuation\">.<\/span>email <span class=\"token string\">\"YOUR EMAIL ADDRESS\"<\/span>\r\n<\/code><\/pre>\n<p>Stay on the command line and change to the directory where you keep your site files. If your files are in <i>\/Users\/rachel\/Sites\/vm\/clientname<\/i>, you would type:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">cd <span class=\"token operator\">\/<\/span>Users<span class=\"token operator\">\/<\/span>rachel<span class=\"token operator\">\/<\/span>Sites<span class=\"token operator\">\/<\/span>vm<span class=\"token operator\">\/<\/span>clientname\r\n<\/code><\/pre>\n<p>The next command tells Git that we want to create a new Git repository here:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git init\r\n<\/code><\/pre>\n<p>We then add our files:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git add <span class=\"token punctuation\">.<\/span>\r\n<\/code><\/pre>\n<p>Then commit the files:<\/p>\n<pre class=\" language-bash\"><code class=\" language-bash\">git commit <span class=\"token operator\">-<\/span>m <span class=\"token string\">\"Adding initial files\"<\/span>\r\n<\/code><\/pre>\n<p>The comment in quotes after <code>-m<\/code> is a message describing the commit. Your local files are now in Git! As you work you can add and commit files.<\/p>\n<p>If you would rather not work in the command line, there are plenty of applications to help you work with Git. <a href=\"http:\/\/www.git-tower.com\/\">Tower<\/a> is a popular choice. The people who develop Tower have also produced a great book on <a href=\"http:\/\/www.git-tower.com\/learn\/ebook\">learning version control with Git<\/a>. You can read online free or purchase an ebook version.<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>In this article I\u2019ll be taking a look at how to build a simple yet robust workflow for developing sites that require PHP and MySQL. I\u2019ll show you how to use Vagrant to create and run a web server on your own computer, with the version of PHP your live site runs. I also demonstrate [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 17,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [5, 1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/178"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=178"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/178\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/17"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=178"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=178"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=178"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/178\/meta"
+    }]
+  }
+}, {
+  "id": 174,
+  "date": "2015-07-17T05:32:38",
+  "date_gmt": "2015-07-17T05:32:38",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=174"
+  },
+  "modified": "2015-07-17T07:12:43",
+  "modified_gmt": "2015-07-17T07:12:43",
+  "slug": "blog-test-from-abhijeet-with-a-very-long-long-long-long-title-to-test-the-long-titles-in-the-blog-page-so-tht-it-wont-break",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=174",
+  "title": {
+    "rendered": "Blog Test from Abhijeet with a very long long long long title to test the long titles in the blog page so tht it won&#8217;t break"
+  },
+  "content": {
+    "rendered": "<h2>Hello this is a test i am wrting<\/h2>\n<p>&amp;nbspDonec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Fusce vulputate eleifend sapien. Vestibulum suscipit nulla quis orci. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo.Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Nullam cursus lacinia erat. Donec posuere vulputate arcu. Nullam tincidunt adipiscing enim. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.<\/p>\n<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Morbi vestibulum volutpat enim. In consectetuer turpis ut velit.<\/p>\n<p>Vestibulum volutpat pretium libero. Cras non dolor. Vivamus laoreet. Phasellus consectetuer vestibulum elit. Praesent blandit laoreet nibh.<\/p>\n<p>Pellentesque dapibus hendrerit tortor. Cras ultricies mi eu turpis hendrerit fringilla. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Maecenas vestibulum mollis diam. Fusce a quam.<\/p>\n<p>Mauris sollicitudin fermentum libero. Sed fringilla mauris sit amet nibh. Nullam dictum felis eu pede mollis pretium. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nullam vel sem.<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>Hello this is a test i am wrting &amp;nbspDonec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Fusce vulputate eleifend sapien. Vestibulum suscipit nulla quis orci. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo.Phasellus leo [&hellip;]<\/p>\n"
+  },
+  "author": 3,
+  "featured_media": 175,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [4, 1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/174"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/3"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=174"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/174\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/175"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=174"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=174"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=174"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/174\/meta"
+    }]
+  }
+}, {
+  "id": 171,
+  "date": "2015-07-17T04:42:38",
+  "date_gmt": "2015-07-17T04:42:38",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=171"
+  },
+  "modified": "2015-07-17T04:42:38",
+  "modified_gmt": "2015-07-17T04:42:38",
+  "slug": "blog-from-dale",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=171",
+  "title": {
+    "rendered": "Blog from Dale"
+  },
+  "content": {
+    "rendered": "<p>Responisive broken elements:<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>Responisive broken elements:<\/p>\n"
+  },
+  "author": 2,
+  "featured_media": 172,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/171"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/2"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=171"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/171\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/172"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=171"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=171"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=171"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/171\/meta"
+    }]
+  }
+}, {
+  "id": 166,
+  "date": "2015-07-17T03:15:33",
+  "date_gmt": "2015-07-17T03:15:33",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=166"
+  },
+  "modified": "2015-07-17T03:15:33",
+  "modified_gmt": "2015-07-17T03:15:33",
+  "slug": "one-more",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=166",
+  "title": {
+    "rendered": "One More"
+  },
+  "content": {
+    "rendered": "<p>Haxx0r ipsum ddos new rsa *.* tera segfault fopen class finally Dennis Ritchie machine code null wannabee back door salt blob cat case Donald Knuth. Ctl-c memory leak exception bubble sort gurfle nak infinite loop. Snarf stack trace boolean access if sudo for mountain dew irc.<\/p>\n<p>Loop break malloc less cat flood mutex else ip tcp function port pragma shell try catch finally ban bypass bubble sort cd case L0phtCrack worm Trojan horse. Injection hack the mainframe long bin kilo cookie memory leak packet Leslie Lamport double unix bar race condition. Ack January 1, 1970 linux foo snarf I&#8217;m compiling thread salt machine code if root python gcc frack ddos stack trace.<\/p>\n<p>Endif fork cat throw all your base are belong to us piggyback class wabbit python error endif I&#8217;m compiling unix epoch win ip mutex segfault bypass. Perl terminal port char new gobble Leslie Lamport memory leak. Bytes sql root shell warez protocol January 1, 1970 echo xss daemon eof wannabee Trojan horse.<\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>Haxx0r ipsum ddos new rsa *.* tera segfault fopen class finally Dennis Ritchie machine code null wannabee back door salt blob cat case Donald Knuth. Ctl-c memory leak exception bubble sort gurfle nak infinite loop. Snarf stack trace boolean access if sudo for mountain dew irc. Loop break malloc less cat flood mutex else ip [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 167,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/166"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=166"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/166\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/167"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=166"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=166"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=166"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/166\/meta"
+    }]
+  }
+}, {
+  "id": 163,
+  "date": "2015-07-17T03:03:07",
+  "date_gmt": "2015-07-17T03:03:07",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=163"
+  },
+  "modified": "2015-07-17T03:03:07",
+  "modified_gmt": "2015-07-17T03:03:07",
+  "slug": "web-development",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=163",
+  "title": {
+    "rendered": "Web Development"
+  },
+  "content": {
+    "rendered": "<p>A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content <\/p>\n<p><code><br \/>\nimport sys<br \/>\nimport base64<\/p>\n<p>input_list = []<\/p>\n<p>def add_to_list(new_line):<br \/>\n  input_list.append(new_line)<\/p>\n<p>def user_input():<br \/>\n  print 'Input the text you would like to decode here \\n'<br \/>\n  while True:<br \/>\n    new_line = raw_input('> ')<br \/>\n    if new_line == 'DONE':<br \/>\n      break<br \/>\n    else:<br \/>\n      add_to_list(new_line)<br \/>\n      continue<\/p>\n<p>def show_list():<br \/>\n  print \"Here is the b64 code block \\n\"<br \/>\n  for item in input_list:<br \/>\n    print(item)<\/p>\n<p>def combine_list(): #combines the list into a string<br \/>\n  print \"here is the decoded text \\n\"<br \/>\n  a = ''.join(input_list)<br \/>\n  print base64.b64decode(a)<\/p>\n<p>user_input()<br \/>\nshow_list()<br \/>\nprint \"\\n\"<br \/>\ncombine_list()<br \/>\n<\/code><\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content A Whole bunch of content [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 164,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/163"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=163"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/163\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/164"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=163"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=163"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=163"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/163\/meta"
+    }]
+  }
+}, {
+  "id": 160,
+  "date": "2015-07-17T02:57:22",
+  "date_gmt": "2015-07-17T02:57:22",
+  "guid": {
+    "rendered": "http:\/\/studiomatrix.matrix-staging.com\/?p=160"
+  },
+  "modified": "2015-07-17T02:57:22",
+  "modified_gmt": "2015-07-17T02:57:22",
+  "slug": "second-post",
+  "type": "post",
+  "link": "http:\/\/localhost\/studiomatrix\/?p=160",
+  "title": {
+    "rendered": "Second Post"
+  },
+  "content": {
+    "rendered": "<p>This is the second post. <\/p>\n<p>There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content <\/p>\n<p><code>Some code<\/code><\/p>\n<blockquote><p>This is some quote<\/p><\/blockquote>\n<p>More content <\/p>\n"
+  },
+  "excerpt": {
+    "rendered": "<p>This is the second post. There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content There is a whole bunch of content Some [&hellip;]<\/p>\n"
+  },
+  "author": 1,
+  "featured_media": 161,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "format": "standard",
+  "categories": [1],
+  "tags": [],
+  "_links": {
+    "self": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/160"
+    }],
+    "collection": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts"
+    }],
+    "about": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/types\/post"
+    }],
+    "author": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/users\/1"
+    }],
+    "replies": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcomments&post=160"
+    }],
+    "version-history": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/160\/revisions"
+    }],
+    "https:\/\/api.w.org\/featuredmedia": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/media\/161"
+    }],
+    "https:\/\/api.w.org\/attachment": [{
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fmedia&parent=160"
+    }],
+    "https:\/\/api.w.org\/term": [{
+      "taxonomy": "category",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Fcategories&post=160"
+    }, {
+      "taxonomy": "post_tag",
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=%2Fwp%2Fv2%2Ftags&post=160"
+    }],
+    "https:\/\/api.w.org\/meta": [{
+      "embeddable": true,
+      "href": "http:\/\/localhost\/studiomatrix\/?rest_route=\/wp\/v2\/posts\/160\/meta"
+    }]
+  }
+}]

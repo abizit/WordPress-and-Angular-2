@@ -15,8 +15,7 @@ import {DataService} from './data.service';
 })
 
 export class PostDetail {
-    posts : PostInterface [];
-    post : PostInterface;
+    post;
     errorMessage : string;
 
     constructor(
@@ -27,15 +26,16 @@ export class PostDetail {
     ngOnInit(){
         let id = +this._routerParams.get('id');
         this.getPost(id);
-
     }
+
     getPost(id:number){
-        return this._dataService.getPosts()
+        return this._dataService.getPost(id)
             .subscribe(
-                posts => this.posts = posts,
-                error =>  this.errorMessage = <any>error,
-                () => this.post = this.posts.filter(post => post.id === id)[0])
-        ;
+                data => {
+                    this.post = data;
+
+                },
+                error =>  this.errorMessage = <any>error);
     }
 
 }

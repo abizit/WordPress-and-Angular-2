@@ -36,8 +36,10 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
                 };
                 PostDetail.prototype.getPost = function (id) {
                     var _this = this;
-                    return this._dataService.getPosts()
-                        .subscribe(function (posts) { return _this.posts = posts; }, function (error) { return _this.errorMessage = error; }, function () { return _this.post = _this.posts.filter(function (post) { return post.id === id; })[0]; });
+                    return this._dataService.getPost(id)
+                        .subscribe(function (data) {
+                        _this.post = data;
+                    }, function (error) { return _this.errorMessage = error; });
                 };
                 PostDetail = __decorate([
                     core_1.Component({
