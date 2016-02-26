@@ -1,4 +1,4 @@
-import {Injectable, Component} from "angular2/core";
+import {Injectable} from "angular2/core";
 import {Http, Response} from 'angular2/http';
 import {Observable} from 'rxjs/Rx';
 import {PostInterface} from './data.interface';
@@ -6,8 +6,8 @@ import {Headers} from "angular2/http";
 import {RequestOptions} from "angular2/http";
 
 
-@Injectable()
 
+@Injectable()
 export class DataService{
     private _dataURL : string = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
     posts : PostInterface [];
@@ -16,39 +16,23 @@ export class DataService{
 
     constructor(private http:Http){}
 
-    getData(url:string):Observable<any[]>{
+    getPosts(){
         //return this.http.get(this._dataURL).map((res:Response) => res.json());
-        return this.http.get(url)
-            .map(res=>{
-                if(res.json()){
-                    return res.json()
-                }
-            })
+        return this.http.get(this._dataURL)
+            .map(res=>res.json())
+            //.do(data => console.log(data)) // eyeball results in the console
             .catch(this.handleError);
     }
 
-    singlePost: Array<any>= [];
-
-    methodName(){
-        this.getPosts()
-            .subscribe(res=>{
-                this.posts = res;
-                return this.posts;
-
-            });
-    }
-
-    getPosts():Observable<any[]>{
-        return this.getData(this._dataURL);
-    }
+    //todo fix search
 
     getPost(filterid:number):Observable<any[]>{
         this._dataURL = this._dataURL + '/' + filterid;
-        return this.getData(this._dataURL);
+        return this.http.get(this._dataURL)
+            .map(res=>res.json())
+            //.do(data => console.log(data)) // eyeball results in the console
+            .catch(this.handleError);
     }
-
-
-
 
     private handleError (error: Response) {
         // in a real world app, we may send the error to some remote logging infrastructure

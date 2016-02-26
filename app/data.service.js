@@ -28,32 +28,19 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
                 function DataService(http) {
                     this.http = http;
                     this._dataURL = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
-                    this.singlePost = [];
                 }
-                DataService.prototype.getData = function (url) {
+                DataService.prototype.getPosts = function () {
                     //return this.http.get(this._dataURL).map((res:Response) => res.json());
-                    return this.http.get(url)
-                        .map(function (res) {
-                        if (res.json()) {
-                            return res.json();
-                        }
-                    })
+                    return this.http.get(this._dataURL)
+                        .map(function (res) { return res.json(); })
                         .catch(this.handleError);
                 };
-                DataService.prototype.methodName = function () {
-                    var _this = this;
-                    this.getPosts()
-                        .subscribe(function (res) {
-                        _this.posts = res;
-                        return _this.posts;
-                    });
-                };
-                DataService.prototype.getPosts = function () {
-                    return this.getData(this._dataURL);
-                };
+                //todo fix search
                 DataService.prototype.getPost = function (filterid) {
                     this._dataURL = this._dataURL + '/' + filterid;
-                    return this.getData(this._dataURL);
+                    return this.http.get(this._dataURL)
+                        .map(function (res) { return res.json(); })
+                        .catch(this.handleError);
                 };
                 DataService.prototype.handleError = function (error) {
                     // in a real world app, we may send the error to some remote logging infrastructure

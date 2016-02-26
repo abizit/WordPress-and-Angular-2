@@ -4,6 +4,7 @@ import {RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES} from "angular2/router"
 import {PostComponent} from './post.component';
 import {PostDetail} from './post-detail.component';
 
+
 @Component({
     selector : 'post-app',
     providers : [ROUTER_PROVIDERS]

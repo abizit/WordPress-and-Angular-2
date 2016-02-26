@@ -10,8 +10,8 @@ interface Hero {
     name: string;
 }
 @Component({
-        selector :'post-list',
-        providers:[DataService,HTTP_PROVIDERS]
+    selector :'post-list',
+    providers:[DataService,HTTP_PROVIDERS]
 })
 
 @View({
@@ -30,7 +30,6 @@ export class PostComponent implements OnInit{
     ){}
 
     ngOnInit(){
-
         this.getPosts();
     }
 
@@ -45,4 +44,3 @@ export class PostComponent implements OnInit{
         this._router.navigate(['PostDetail', {id: this.selectedPost.id}]);
     }
 }
-
