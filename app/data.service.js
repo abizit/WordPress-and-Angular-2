@@ -1,6 +1,4 @@
-System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -27,20 +25,21 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
             DataService = (function () {
                 function DataService(http) {
                     this.http = http;
-                    this._dataURL = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
+                    this._dataURL = 'http://jsonplaceholder.typicode.com';
+                    console.log(localStorage.length);
                 }
-                DataService.prototype.getPosts = function () {
-                    //return this.http.get(this._dataURL).map((res:Response) => res.json());
-                    return this.http.get(this._dataURL)
+                DataService.prototype.getData = function (fetchParams) {
+                    this.flag = 1;
+                    return this.http.get(this._dataURL + fetchParams)
                         .map(function (res) { return res.json(); })
+                        .do(function (data) { localStorage.setItem('initial-data', JSON.stringify(data)); }) // eyeball results in the console
                         .catch(this.handleError);
                 };
-                //todo fix search
-                DataService.prototype.getPost = function (filterid) {
-                    this._dataURL = this._dataURL + '/' + filterid;
-                    return this.http.get(this._dataURL)
-                        .map(function (res) { return res.json(); })
-                        .catch(this.handleError);
+                DataService.prototype.getPosts = function () {
+                    return this.getData('/posts');
+                };
+                DataService.prototype.getPostByID = function (id) {
+                    return this.getData('/posts/' + id);
                 };
                 DataService.prototype.handleError = function (error) {
                     // in a real world app, we may send the error to some remote logging infrastructure
@@ -53,7 +52,7 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
                     __metadata('design:paramtypes', [http_1.Http])
                 ], DataService);
                 return DataService;
-            }());
+            })();
             exports_1("DataService", DataService);
         }
     }

@@ -1,6 +1,4 @@
-System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.service'], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(['angular2/core', 'angular2/router', './data.service'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10,7 +8,7 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, http_1, data_service_1;
+    var core_1, router_1, data_service_1;
     var PostComponent;
     return {
         setters:[
@@ -19,9 +17,6 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
             },
             function (router_1_1) {
                 router_1 = router_1_1;
-            },
-            function (http_1_1) {
-                http_1 = http_1_1;
             },
             function (data_service_1_1) {
                 data_service_1 = data_service_1_1;
@@ -37,8 +32,14 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
                 };
                 PostComponent.prototype.getPosts = function () {
                     var _this = this;
-                    this._dataService.getPosts()
-                        .subscribe(function (posts) { return _this.posts = posts; }, function (error) { return _this.errorMessage = error; });
+                    if (localStorage.length <= 1) {
+                        return this._dataService.getPosts().subscribe(function (data) { return _this.posts = data; }, function () { return console.log('new fetch'); });
+                    }
+                    else {
+                        this.posts = JSON.parse(localStorage.getItem('initial-data'));
+                        console.log('using this');
+                        return this.posts;
+                    }
                 };
                 PostComponent.prototype.gotoDetail = function (post) {
                     this.selectedPost = post;
@@ -46,8 +47,7 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
                 };
                 PostComponent = __decorate([
                     core_1.Component({
-                        selector: 'post-list',
-                        providers: [data_service_1.DataService, http_1.HTTP_PROVIDERS]
+                        selector: 'post-list'
                     }),
                     core_1.View({
                         templateUrl: '../templates/template-post-list.html'
@@ -55,7 +55,7 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './data.se
                     __metadata('design:paramtypes', [router_1.Router, data_service_1.DataService])
                 ], PostComponent);
                 return PostComponent;
-            }());
+            })();
             exports_1("PostComponent", PostComponent);
         }
     }

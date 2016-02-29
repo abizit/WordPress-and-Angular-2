@@ -1,7 +1,7 @@
 <div *ngIf="post" >
-    <h2>{{post.title.rendered}} details!</h2>
-    <div [innerHTML]="post.content.rendered">
-
+    <h2>{{post.title}} details!</h2>
+    <div>
+        {{post.body}}
     </div>
 
 </div>

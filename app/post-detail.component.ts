@@ -5,9 +5,7 @@ import {PostInterface} from './data.interface';
 import {DataService} from './data.service';
 
 @Component({
-    selector :'post-detail',
-    //inputs :['post'],
-    providers: [DataService,HTTP_PROVIDERS]
+    selector :'post-detail'
 })
 
 @View({
@@ -15,6 +13,7 @@ import {DataService} from './data.service';
 })
 
 export class PostDetail {
+    posts;
     post;
     errorMessage : string;
 
@@ -29,13 +28,10 @@ export class PostDetail {
     }
 
     getPost(id:number){
-        return this._dataService.getPost(id)
-            .subscribe(
-                data => {
-                    this.post = data;
+        return this._dataService.getPostByID(id).subscribe(
+            data => this.post = data
+        )
 
-                },
-                error =>  this.errorMessage = <any>error);
     }
 
 }
