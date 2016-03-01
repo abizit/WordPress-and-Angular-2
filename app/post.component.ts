@@ -30,15 +30,18 @@ export class PostComponent implements OnInit{
     }
 
     getPosts():any{
-        if(localStorage.length <= 1){
-            return this._dataService.getPosts().subscribe(
-            data => this.posts = data,
-                () => console.log('new fetch')
-            )
+        var lcs = localStorage.getItem('load-data');
+        // Check if localStorage has 'load-data array'
+        if (lcs != null){
+            // returns localStorage Data
+            console.log('Loaded Data');
+            this.posts = this._dataService.getPosts();
         } else {
-            this.posts = JSON.parse(localStorage.getItem('initial-data'));
-            console.log('using this');
-            return this.posts;
+            // Make a new http.get request
+            this._dataService.getData().subscribe(
+                data => this.posts = data
+            )
+            console.log('New Data');
         }
     }
 

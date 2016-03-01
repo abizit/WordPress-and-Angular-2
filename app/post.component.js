@@ -1,4 +1,6 @@
-System.register(['angular2/core', 'angular2/router', './data.service'], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './data.service'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -32,13 +34,17 @@ System.register(['angular2/core', 'angular2/router', './data.service'], function
                 };
                 PostComponent.prototype.getPosts = function () {
                     var _this = this;
-                    if (localStorage.length <= 1) {
-                        return this._dataService.getPosts().subscribe(function (data) { return _this.posts = data; }, function () { return console.log('new fetch'); });
+                    var lcs = localStorage.getItem('load-data');
+                    // Check if localStorage has 'load-data array'
+                    if (lcs != null) {
+                        // returns localStorage Data
+                        console.log('Loaded Data');
+                        this.posts = this._dataService.getPosts();
                     }
                     else {
-                        this.posts = JSON.parse(localStorage.getItem('initial-data'));
-                        console.log('using this');
-                        return this.posts;
+                        // Make a new http.get request
+                        this._dataService.getData().subscribe(function (data) { return _this.posts = data; });
+                        console.log('New Data');
                     }
                 };
                 PostComponent.prototype.gotoDetail = function (post) {
@@ -55,7 +61,7 @@ System.register(['angular2/core', 'angular2/router', './data.service'], function
                     __metadata('design:paramtypes', [router_1.Router, data_service_1.DataService])
                 ], PostComponent);
                 return PostComponent;
-            })();
+            }());
             exports_1("PostComponent", PostComponent);
         }
     }

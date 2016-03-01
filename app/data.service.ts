@@ -10,29 +10,29 @@ import {Json} from "angular2/src/facade/lang";
 
 @Injectable()
 export class DataService{
-    private _dataURL : string = 'http://jsonplaceholder.typicode.com';
+    private _dataURL : string = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
     data : PostInterface [];
     flag : number;
     errorMessage : string;
 
     constructor(private http:Http){
-        console.log(localStorage.length);
+        //localStorage.clear();
+
     }
 
-    getData(fetchParams: string){
-        this.flag = 1;
-        return this.http.get(this._dataURL + fetchParams)
+    getData():Observable<any[]>{
+        return this.http.get(this._dataURL)
             .map(res => res.json())
-            .do(data => {localStorage.setItem('initial-data',JSON.stringify(data))}) // eyeball results in the console
             .catch(this.handleError)
     }
-
+    //these are called if localStorge already has data
     getPosts(){
-        return this.getData('/posts');
+        return JSON.parse(localStorage.getItem('load-data'));
     }
-
     getPostByID(id:number){
-            return this.getData('/posts/'+id);
+            return JSON.parse(localStorage.getItem('load-data')).filter(
+                post => post.id === id
+            )[0];
     }
 
 

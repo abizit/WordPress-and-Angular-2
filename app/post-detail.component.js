@@ -1,4 +1,6 @@
-System.register(['angular2/core', 'angular2/router', './data.service'], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './data.service'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -33,7 +35,21 @@ System.register(['angular2/core', 'angular2/router', './data.service'], function
                 };
                 PostDetail.prototype.getPost = function (id) {
                     var _this = this;
-                    return this._dataService.getPostByID(id).subscribe(function (data) { return _this.post = data; });
+                    var lcs = localStorage.getItem('load-data');
+                    // Check if localstorage has 'load-data array'
+                    if (lcs != null) {
+                        // returns localStorage Data
+                        console.log('Loaded Data');
+                        this.post = this._dataService.getPostByID(id);
+                    }
+                    else {
+                        // Make a new http.get request
+                        this._dataService.getData().subscribe(function (data) {
+                            _this.posts = data;
+                            _this.post = _this.posts.filter(function (post) { return post.id === id; })[0];
+                        });
+                        console.log('New Data');
+                    }
                 };
                 PostDetail = __decorate([
                     core_1.Component({
@@ -45,7 +61,7 @@ System.register(['angular2/core', 'angular2/router', './data.service'], function
                     __metadata('design:paramtypes', [data_service_1.DataService, router_1.RouteParams])
                 ], PostDetail);
                 return PostDetail;
-            })();
+            }());
             exports_1("PostDetail", PostDetail);
         }
     }

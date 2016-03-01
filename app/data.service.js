@@ -24,22 +24,21 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx'], function(exports_
         execute: function() {
             DataService = (function () {
                 function DataService(http) {
+                    //localStorage.clear();
                     this.http = http;
-                    this._dataURL = 'http://jsonplaceholder.typicode.com';
-                    console.log(localStorage.length);
+                    this._dataURL = 'http://localhost/studiomatrix/?rest_route=/wp/v2/posts';
                 }
-                DataService.prototype.getData = function (fetchParams) {
-                    this.flag = 1;
-                    return this.http.get(this._dataURL + fetchParams)
+                DataService.prototype.getData = function () {
+                    return this.http.get(this._dataURL)
                         .map(function (res) { return res.json(); })
-                        .do(function (data) { localStorage.setItem('initial-data', JSON.stringify(data)); }) // eyeball results in the console
                         .catch(this.handleError);
                 };
+                //these are called if localStorge already has data
                 DataService.prototype.getPosts = function () {
-                    return this.getData('/posts');
+                    return JSON.parse(localStorage.getItem('load-data'));
                 };
                 DataService.prototype.getPostByID = function (id) {
-                    return this.getData('/posts/' + id);
+                    return JSON.parse(localStorage.getItem('load-data')).filter(function (post) { return post.id === id; })[0];
                 };
                 DataService.prototype.handleError = function (error) {
                     // in a real world app, we may send the error to some remote logging infrastructure

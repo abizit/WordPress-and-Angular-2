@@ -1,20 +1,7 @@
 <div *ngIf="post" >
-    <h2>{{post.title}} details!</h2>
-    <div>
-        {{post.body}}
+    <h2 [innerHTML]="post.title.rendered"> </h2>
+    <div [innerHTML]="post.content.rendered">
+
     </div>
 
 </div>
-
-<!--<section class="container-fluid">-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<article *ngFor="#post of posts" (click)="gotoDetail(post)">-->
-                <!--<h3>{{ post.title.rendered }}</h3>-->
-            <!--</article>-->
-        <!--</div>-->
-
-
-
-    <!--</div>-->
-<!--</section>-->

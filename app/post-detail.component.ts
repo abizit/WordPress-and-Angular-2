@@ -28,9 +28,22 @@ export class PostDetail {
     }
 
     getPost(id:number){
-        return this._dataService.getPostByID(id).subscribe(
-            data => this.post = data
-        )
+        var lcs = localStorage.getItem('load-data');
+        // Check if localstorage has 'load-data array'
+        if (lcs != null){
+            // returns localStorage Data
+            console.log('Loaded Data');
+            this.post = this._dataService.getPostByID(id);
+        } else {
+            // Make a new http.get request
+            this._dataService.getData().subscribe(
+                data => {
+                    this.posts = data;
+                    this.post = this.posts.filter(post => post.id === id)[0];
+                }
+            )
+            console.log('New Data');
+        }
 
     }
 

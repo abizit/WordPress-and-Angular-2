@@ -3,6 +3,7 @@ import {RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES} from "angular2/router"
 
 import {PostComponent} from './post.component';
 import {PostDetail} from './post-detail.component';
+import {DataService} from "./data.service";
 
 
 @Component({
@@ -19,8 +20,8 @@ import {PostDetail} from './post-detail.component';
     {
         path: '/posts',
         name : 'Posts',
-        component : PostComponent,
-        useAsDefault : true
+        component : PostComponent
+
 
     },
     {
@@ -31,5 +32,13 @@ import {PostDetail} from './post-detail.component';
 ])
 
 export class MainApp{
+            constructor(private _dataService:DataService) {
+                this.fetchData();
+            }
+            fetchData(){
+                return this._dataService.getData().subscribe(
+                    data => localStorage.setItem("load-data" ,JSON.stringify(data))
 
+                )
+            }
 }

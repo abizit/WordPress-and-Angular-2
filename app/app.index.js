@@ -1,4 +1,6 @@
-System.register(['angular2/core', "angular2/router", './post.component', './post-detail.component'], function(exports_1) {
+System.register(['angular2/core', "angular2/router", './post.component', './post-detail.component', "./data.service"], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +10,7 @@ System.register(['angular2/core', "angular2/router", './post.component', './post
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, post_component_1, post_detail_component_1;
+    var core_1, router_1, post_component_1, post_detail_component_1, data_service_1;
     var MainApp;
     return {
         setters:[
@@ -23,11 +25,19 @@ System.register(['angular2/core', "angular2/router", './post.component', './post
             },
             function (post_detail_component_1_1) {
                 post_detail_component_1 = post_detail_component_1_1;
+            },
+            function (data_service_1_1) {
+                data_service_1 = data_service_1_1;
             }],
         execute: function() {
             MainApp = (function () {
-                function MainApp() {
+                function MainApp(_dataService) {
+                    this._dataService = _dataService;
+                    this.fetchData();
                 }
+                MainApp.prototype.fetchData = function () {
+                    return this._dataService.getData().subscribe(function (data) { return localStorage.setItem("load-data", JSON.stringify(data)); });
+                };
                 MainApp = __decorate([
                     core_1.Component({
                         selector: 'post-app',
@@ -41,8 +51,7 @@ System.register(['angular2/core', "angular2/router", './post.component', './post
                         {
                             path: '/posts',
                             name: 'Posts',
-                            component: post_component_1.PostComponent,
-                            useAsDefault: true
+                            component: post_component_1.PostComponent
                         },
                         {
                             path: '/posts/:id',
@@ -50,10 +59,10 @@ System.register(['angular2/core', "angular2/router", './post.component', './post
                             component: post_detail_component_1.PostDetail
                         }
                     ]), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [data_service_1.DataService])
                 ], MainApp);
                 return MainApp;
-            })();
+            }());
             exports_1("MainApp", MainApp);
         }
     }
